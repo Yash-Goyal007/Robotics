@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=2.0">
+  <style>
+    .main {
+      border-width: 9px;
+      border-style: solid;
+      border-radius: 6px;
+      border-color: black;
+    }
+
+    h2 {
+      background-color: black;
+      height: 45px;
+      width: 180px;
+    }
+
+    .robotics {
+      margin: 30px auto;
+      width: 100%;
+      padding: 4px;
+    }
+
+    .robotics .floating-image {
+      float: right;
+      width: 300px;
+      height: 160px;
+      margin-left: 30px;
+      margin-bottom: 10px;
+      border-width: 7px;
+      border-style: solid;
+      border-radius: 3px;
+    }
+
+    .robo {
+      margin: 30px auto;
+      width: 100%;
+      padding: 8px;
+    }
+
+    .robo .float-image {
+      float: left;
+      width: 300px;
+      height: 160px;
+      margin-right: 30px;
+      margin-bottom: 10px;
+      border-width: 7px;
+      border-style: solid;
+      border-radius: 3px;
+    }
+
+    .footer {
+      background-color: black;
+      color: rgb(210, 180, 238);
+      text-align: center;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    header {
+      background-color: #35424a;
+      color: white;
+      padding-top: 30px;
+      min-height: 70px;
+      border-bottom: 2px solid #e8491d;
+    }
+
+    header a {
+      text-decoration: none;
+      color: white;
+      font-size: 60%;
+      text-transform: uppercase;
+    }
+
+    header ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    header li {
+      display: inline;
+      float: left;
+      padding: 0 20px 0 20px;
+    }
+
+    header #logo {
+      float: left;
+    }
+
+    header #logo h2 {
+      margin: 2px;
+      color: #e8491d;
+      text-transform: uppercase;
+      position: relative;
+      overflow: hidden;
+      animation: thunder 2.3s infinite linear;
+      font-size: 35px;
+      text-shadow: violet;
+      font-family: inherit;
+    }
+
+    header nav {
+      float: right;
+      margin-top: 0px;
+    }
+
+    header .home a {
+      color: white;
+    }
+
+    /* /a:hover{color:#e8491d;border-bottom:2px solid white;}/ */
+
+
+
+    @keyframes thunder {
+      0% {
+        color: text-shadow;
+        none:
+          90%;
+        color: text-shadow;
+        none:
+          100%;
+        color: gold;
+        text-shadow: 0 0 2rem red;
+      }
+    }
+
+    header nav a {
+      text-decoration: none;
+      color: white;
+      position: relative;
+    }
+
+    i {
+      color: #e8491d;
+    }
+
+    header nav a::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -0.11rem;
+      left: -0.1rem;
+      background-color: yellow;
+      mix-blend-mode: multiply;
+      z-index: 1;
+      transition: all 0.3s linear;
+      transform-origin: top;
+    }
+
+    header nav a::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0.11rem;
+      left: 0.1rem;
+      background-color: limegreen;
+      mix-blend-mode: multiply;
+      z-index: 1;
+      transition: all 0.3s linear;
+      transform-origin: bottom;
+    }
+
+    header nav a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    header nav a:hover::before {
+      top: 0;
+      left: 0;
+      transform: perspective(1000rem) rotateX(75deg);
+    }
+
+    header nav a:hover::after {
+      top: 0;
+      left: 0;
+      transform: perspective(1000rem) rotateX(-75deg);
+    }
+  </style>
+  <title>Robotics</title>
+</head>
+
+<body style="background-color: rgb(184, 180, 183);">
+  <header>
+    <div class="container">
+      <div id="logo">
+        <h2>Robotics</h2>
+      </div>
+      <nav>
+        <ul>
+          <li class="home"><a href="../index.html">Home</a></li>
+          <li><a href="../humanoid/humanoid_robot.html">Humanoid</a></li>
+          <li><a href="../index.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <h1>
+    <p align="center" style="color:rgb(3, 3, 107)">
+      <font size=9>Advantages of robotics</font>
+    </p>
+  </h1>
+  <p align="center"> <img src="https://tse3.mm.bing.net/th?id=OIP.PR5-iJ3xW0OW1AwJqlN2cAHaEA&pid=Api&P=0&w=3000&h=3000"
+      alt="not" class="main"></p>
+
+  <ol>
+    <h2>
+      <li>
+        <p style="color:#e8491d">
+          <font size=6>Safety</font>
+        </p>
+      </li>
+    </h2>
+    <div class="robotics">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.48nvaFbtCYkoEr7BVMq-XgHaEY&pid=Api&P=0&w=285&h=182" alt="not"
+        class="floating-image right">
+      <p>
+        <font size=5>Safety is the most obvious advantage of utilizing robotics.Heavy machinery,machinery that runs at
+          hot temperature,and sharp objects can easily injure a human being.By delegating dangerous tasks to robot,you
+          are more likely to look at a repair bill than a serious medical bill or lawsuit.Employees who work dangerous
+          jobs will be thankful that robots can remove some of the risks.</font>
+      </p>
+    </div>
+    <h2>
+      <li>
+        <p style="color:#e8491d">
+          <font size=6>Speed</font>
+      </li>
+    </h2>
+    <div class="robo">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.VbCFDMIMyWSSEcUopzRMQQHaEt&pid=Api&P=0&w=285&h=182" alt="not"
+        class="float-image left">
+      <p>
+        <font size=5>Robots don't get distructed or need to take breaks.They don't request vacation time or ask to leave
+          an hour early.A robot will never feel stressed out and start slower.They don't need to be invited to employee
+          meetings or training session.Robots can work all the time and this speeds up production.They keep your
+          employees from having to overwork themselves to meet high pressure deadlines.</font>
+      </p>
+    </div>
+    <h2>
+      <li>
+        <p style="color:#e8491d">
+          <font size=6>Consistency</font>
+        </p>
+      </li>
+    </h2>
+    <div class="robotics">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.DW1BitiXGqky3HJ6aWjxrwHaE7&pid=Api&P=0&w=285&h=182" alt="not"
+        class="floating-image right">
+      <p>
+        <font size=5>Robots never need to divide their attention between a multitude of things.Their work is never
+          contingent on the work of other people.They would not have unexpected emergencies,and they won't need to be
+          relocated to complete a different time sensitive task.Automation is typically more reliable than human labour.
+        </font>
+      </p>
+    </div>
+    <h2>
+      <li>
+        <p style="color:#e8491d">
+          <font size=6>Perfection</font>
+        </p>
+      </li>
+    </h2>
+    <div class="robo">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.KP1gDyA4vf-IS3fJZbb8vgHaEC&pid=Api&P=0&w=285&h=182" alt="not"
+        class="float-image left">
+      <p>
+        <font size=5>Robots will always deliver quality.Since they're programmed for precise,repetitive motion,they're
+          less likely to make mistakes.In some ways,robots are simultaneously an employee and quality control
+          system.Alack of quirks and preferences,combined with the elimination possibility of human error,will create a
+          predictably perfect product every time.</font>
+      </p>
+    </div>
+    <h2>
+      <li>
+        <p style="color:#e8491d">
+          <font size=6>Job Creation</font>
+        </p>
+      </li>
+    </h2>
+    <div class="robotics">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.vREvhcEmUawrA1SqKZD45AHaEM&pid=Api&P=0&w=285&h=182" alt="not"
+        class="floating-image right">
+      <p>
+        <font size=5>Robots don't take jobs away.They merely change the jobs that exist.Robots need people for
+          monitoring and supervision.The more robots we need,the more people we'll need to built those robots.By
+          training your employees to work with robots,you're giving them a reason to stay motivated in their position
+          with your compony.They'll be there for the advancements and they'll have the unique opportunity to develop a
+          new set of tech or engineering related skills.</font>
+      </p>
+  </ol>
+  <footer class="footer">
+    Copyright &copy; 2021 All rights reserved
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+.contact{
+    padding-bottom: 35px;
+    padding-top: 2px;
+    background: rgba(0, 0, 0, 0.7) url('https://i.ytimg.com/vi/rL6RRIOZyCM/maxresdefault.jpg');
+    background-blend-mode: darken;
+}
+
+.text-center{
+    text-align: center;
+    font-family:Comic Sans MS ;
+    color: #ad8be8;
+}
+.form{
+    max-width: 550px;
+    margin :auto;
+}
+.form input{
+    width: 100%;
+    font-size: 20px;
+    font-family: Snell Roundhand, cursive;
+    border: 2px solid #79188a;
+    border-radius: 4px;
+    margin-top: 30px;
+    padding: 5px;
+}
+.box{
+    margin-top: 30px;
+    width: 547px;
+    height: 174px;
+    padding: 0px;
+    border: 3px solid #79188a;
+    border-radius: 9px;
+    font-size: 20px;
+    font-family: Snell Roundhand, cursive;
+    padding: 5px;
+}
+.footer{
+    background-color: black;
+    color: rgb(210, 180, 238);
+    text-align: center;
+}
+
+footer button{
+    background-color: black;
+    color: rgb(210, 180, 238);
+    text-align: center;
+}
+
+.topic{
+    color: rgb(83 39 125);
+    text-align: left;
+    font-size: 52px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    font-family: Comic Sans MS;
+    margin-bottom: 22px;
+}
+.explainl{
+    font-family: Comic Sans MS;
+    color: blueviolet;
+    font-size: 18px;
+    padding-right: 10px;
+}
+.explainr{
+    font-family: Comic Sans MS;
+    color: blueviolet;
+    font-size: 18px;
+    padding-left: 25px;
+}
+.topic-image{
+    
+    width: 978px;
+    height: 508px;
+}
+
+.section{
+    padding-left: 55px;
+}
+.lineleft{
+    display: flex;
+    max-width: 74%;
+    margin: auto;
+    padding: 28px 0px;
+}
+.lineright{
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 74%;
+    margin: auto;
+    padding: 28px 0px;
+}
+#two{
+    height: 400px;
+    width: 213.5px;
+}
+#five{
+    height: 269px;
+    width: 225.95px;
+}
+#eight{
+    width: 400px;
+    height: 333px;
+}
+#seven{
+    width: 483px;
+    height: 400px;
+}
+#nine{
+    width: 640px;
+    height: 480px;
+}
+#eleven{
+    width: 123%;
+}
+.heading{
+    color: #580aa0;
+    font-size: 20px;
+}
+.top-div{
+    margin-left: 177px;
+}
+.button{
+    color: #580aa0;
+    margin: auto;
+     padding: 12px ;
+     font-size: 18px;
+     margin-left: 569px;
+    margin-bottom: 24px;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction</title>
+</head>
+<body>
+    <section class="humarobo"> 
+        <div>
+            <h2>
+                Robot-Human Interaction
+            </h2>
+            <p>
+                Human–robot interaction has been a topic of both science fiction and academic speculation even before
+                any robots existed. Because much of active HRI development depends on natural language processing, many
+                aspects of HRI are continuations of human communications, a field of research which is much older than
+                robotics.
+            </p>
+            <span>The origin of HRI as a discrete problem was stated by 20th-century author Isaac Asimov in 1941, in his
+                novel I, Robot. He states the Three Laws of Robotics as:</span>
+            <ol>
+                <li>A robot may not injure a human being or, through inaction, allow a human being to come to harm.</li>
+                <li>A robot must obey the orders given it by human beings except where such orders would conflict with
+                    the First Law.</li>
+                <li>A robot must protect its own existence as long as such protection does not conflict with the First
+                    or Second Law</li>
+            </ol>
+
+            <p>
+                These three laws provide an overview of the goals engineers and researchers hold for safety in the HRI
+                field, although the fields of robot ethics and machine ethics are more complex than these three
+                principles. However, generally human-robot interaction prioritizes the safety of humans that interact
+                with potentially dangerous robotics equipment. Solutions to this problem range from the philosophical
+                approach of treating robots as ethical agents (individuals with moral agency), to the practical approach
+                of creating safety zones. These safety zones use technologies such as lidar to detect human presence or
+                physical barriers to protect humans by preventing any contact between machine and operator.
+            </p>
+            <p>
+                Although initially robots in the human-robot interaction field required some human intervention to
+                function, research has expanded this to the extent that fully autonomous systems are now far more common
+                than in the early 2000s.Autonomous systems include from simultaneous localization and mapping systems
+                which provide intelligent robot movement to natural language processing and natural-language generation
+                systems which allow for natural, human-esque interaction which meet well-defined psychological
+                benchmarks.
+            </p>
+            <p>
+                Anthropomorphic robots (machines which imitate human body structure) are better described by the
+                biomimetics field, but overlap with HRI in many research applications. Examples of robots which
+                demonstrate this trend include Willow Garage's PR2 robot, the NASA Robonaut, and Honda ASIMO. However,
+                robots in the human-robot interaction field are not limited to human-like robots: Paro and Kismet are
+                both robots designed to elicit emotional response from humans, and so fall into the category of
+                human-robot interaction.
+            </p>
+            <p>
+                Goals in HRI range from industrial manufacturing through Cobots, medical technology through
+                rehabilitation, autism intervention, and elder care devices, entertainment, human augmentation, and
+                human convenience.Future research therefore covers a wide range of fields, much of which focuses on
+                assistive robotics, robot-assisted search-and-rescue, and space exploration.
+            </p>
+        </div>
+    </section>
+    <section class="humarobo">
+        <div>
+            <h2>General HRI Research</h2>
+            <ul>
+                <li>
+                    <h3>Methods for perceiving humans</h3>
+                    <p>
+                        Methods for perceiving humans in the environment are based on sensor information. Research on
+                        sensing components and software led by Microsoft provide useful results for extracting the human
+                        kinematics (see Kinect). An example of older technique is to use colour information for example
+                        the fact that for light skinned people the hands are lighter than the clothes worn. In any case
+                        a human modelled a priori can then be fitted to the sensor data. The robot builds or has
+                        (depending on the level of autonomy the robot has) a 3D mapping of its surroundings to which is
+                        assigned the humans locations.
+                    </p>
+                    <p>
+                        Most methods intend to build a 3D model through vision of the environment. The proprioception
+                        sensors permit the robot to have information over its own state. This information is relative to
+                        a reference.
+
+                        A speech recognition system is used to interpret human desires or commands. By combining the
+                        information inferred by proprioception, sensor and speech the human position and state
+                        (standing, seated). In this matter, Natural language processing is concerned with the
+                        interactions between computers and human (natural) languages, in particular how to program
+                        computers to process and analyze large amounts of natural language data. For instance, neural
+                        network architectures and learning algorithms that can be applied to various natural language
+                        processing tasks including part-of-speech tagging, chunking, named entity recognition, and
+                        semantic role labeling
+                    </p>
+                </li>
+                <li>
+                    <h3>Methods for motion planning</h3>
+                    <img src="human_interaction/HI4.webp" alt="" class="images">
+                    <p>
+                        Motion planning in dynamic environments is a challenge that can at the moment only be achieved
+                        for robots with 3 to 10 degrees of freedom. Humanoid robots or even 2 armed robots which can
+                        have up to 40 degrees of freedom are unsuited for dynamic environments with today's technology.
+                        However lower-dimensional robots can use the potential field method to compute trajectories
+                        which avoid collisions with humans.
+                    </p>
+                </li>
+                <li>
+                    <h3>Cognitive models and theory of mind</h3>
+                    <p>
+                        Humans exhibit negative social and emotional responses as well as decreased trust toward some
+                        robots that closely, but imperfectly, resemble humans; this phenomenon has been termed the
+                        "Uncanny Valley."[13] However recent research in telepresence robots has established that
+                        mimicking human body postures and expressive gestures has made the robots likeable and engaging
+                        in a remote setting.[14] Further, the presence of a human operator was felt more strongly when
+                        tested with an android or humanoid telepresence robot than with normal video communication
+                        through a monitor.[15]
+
+                        While there is a growing body of research about users' perceptions and emotions towards robots,
+                        we are still far from a complete understanding. Only additional experiments will determine a
+                        more precise model.
+                    </p>
+                    <p>Based on past research, we have some indications about current user sentiment and behavior around
+                        robots:</p>
+                    <p>
+                    <ul>
+                        <li>During initial interactions, people are more uncertain, anticipate less social presence, and
+                            have fewer positive feelings when thinking about interacting with robots, and prefer to
+                            communicate with a human. This finding has been called the human-to-human interaction
+                            script.</li>
+                        <li>It has been observed that when the robot performs a proactive behaviour and does not respect
+                            a "safety distance" (by penetrating the user space) the user sometimes expresses fear. This
+                            fear response is person-dependent.</li>
+                        <li>It has also been shown that when a robot has no particular use, negative feelings are often
+                            expressed. The robot is perceived as useless and its presence becomes annoying.</li>
+                        <li>People have also been shown to attribute personality characteristics to the robot that were
+                            not implemented in software.</li>
+                    </ul>
+                    </p>
+                </li>
+                <li>
+                    <h3>Methods for human-robot coordination</h3>
+                    <p>A large body of work in the field of human-robot interaction has looked at how humans and robots
+                        may better collaborate. The primary social cue for humans while collaborating is the shared
+                        perception of an activity, to this end researchers have investigated anticipatory robot control
+                        through various methods including: monitoring the behaviors of human partners using eye
+                        tracking, making inferences about human task intent, and proactive action on the part of the
+                        robot.The studies revealed that the anticipatory control helped users perform tasks faster than
+                        with reactive control alone.</p>
+                    <p>
+                        A common approach to program social cues into robots is to first study human-human behaviors and
+                        then transfer the learning.[19] For example, coordination mechanisms in human-robot
+                        collaboration[20] are based on work in neuroscience[21] which examined how to enable joint
+                        action in human-human configuration by studying perception and action in a social context rather
+                        than in isolation. These studies have revealed that maintaining a shared representation of the
+                        task is crucial for accomplishing tasks in groups. For example, the authors have examined the
+                        task of driving together by separating responsibilities of acceleration and braking i.e., one
+                        person is responsible for accelerating and the other for braking; the study revealed that pairs
+                        reached the same level of performance as individuals only when they received feedback about the
+                        timing of each other's actions. Similarly, researchers have studied the aspect of human-human
+                        handovers with household scenarios like passing dining plates in order to enable an adaptive
+                        control of the same in human-robot handovers.[22] Another study in the domain of Human Factors
+                        and Ergonomics of human-human handovers in warehouses and supermarkets reveal that Givers and
+                        Receivers perceive handover tasks differently which has significant implications for designing
+                        user-centric human-robot collaborative systems.[23] Most recently, researchers have studied a
+                        system that automatically distributes assembly tasks among co-located workers to improve
+                        co-ordination
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

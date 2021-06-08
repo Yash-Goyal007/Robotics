@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROBOTICS APPLICATION</title>
+  <style>
+    body {
+
+      margin: 0px;
+      padding: 0px;
+      height: 666px;
+
+    }
+
+    .footer {
+      background-color: black;
+      color: rgb(210, 180, 238);
+      text-align: center;
+    }
+
+    header nav a {
+      text-decoration: none;
+      color: white;
+      position: relative;
+    }
+
+    i {
+      color: #e8491d;
+    }
+
+    header nav a::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -0.11rem;
+      left: -0.1rem;
+      background-color: yellow;
+      mix-blend-mode: multiply;
+      z-index: 1;
+      transition: all 0.3s linear;
+      transform-origin: top;
+    }
+
+    header nav a::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0.11rem;
+      left: 0.1rem;
+      background-color: limegreen;
+      mix-blend-mode: multiply;
+      z-index: 1;
+      transition: all 0.3s linear;
+      transform-origin: bottom;
+    }
+
+    header nav a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    header nav a:hover::before {
+      top: 0;
+      left: 0;
+      transform: perspective(1000rem) rotateX(75deg);
+    }
+
+    header nav a:hover::after {
+      top: 0;
+      left: 0;
+      transform: perspective(1000rem) rotateX(-75deg);
+    }
+
+    .boxer a:hover {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* /Global/ */
+
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .btn {
+      background: transparent;
+      height: 30px;
+      width: 70px;
+      color: #e8491d;
+      border: 2px solid #e8491d;
+      border-radius: 7px;
+      margin-top: 6px;
+      margin-left: 6px;
+    }
+
+    .btn:hover {
+      background: white;
+      color: red;
+    }
+
+    /* /Header/ */
+
+    header {
+      background-color: #35424a;
+      color: white;
+      padding-top: 30px;
+      min-height: 70px;
+      border-bottom: 2px solid #e8491d;
+    }
+
+    header a {
+      text-decoration: none;
+      color: white;
+      font-size: 60%;
+      text-transform: uppercase;
+    }
+
+    header ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    header li {
+      display: inline;
+      float: left;
+      padding: 0 20px 0 20px;
+    }
+
+    header #logo {
+      float: left;
+    }
+
+    header #logo h2 {
+      margin: 2px;
+      color: #e8491d;
+      text-transform: uppercase;
+      position: relative;
+      overflow: hidden;
+      animation: thunder 2.3s infinite linear;
+      font-size: 35px;
+      text-shadow: violet;
+      font-family: inherit;
+    }
+
+    header nav {
+      float: right;
+      margin-top: 0px;
+    }
+
+    header .home a {
+      color: white;
+    }
+
+    /* /a:hover{color:#e8491d;border-bottom:2px solid white;}/ */
+
+
+
+    @keyframes thunder {
+      0% {
+        color: text-shadow;
+        none:
+          90%;
+        color: text-shadow;
+        none:
+          100%;
+        color: gold;
+        text-shadow: 0 0 2rem red;
+      }
+    }
+
+    table {
+      border-right: 5px solid black;
+
+    }
+
+    th,
+    td {
+      padding: 15px;
+      border-bottom-style: solid;
+    }
+
+    .den {
+      padding: 15px;
+      border-bottom-style: none;
+    }
+
+    .left {
+      display: inline-block;
+
+      position: fixed;
+      left: 34px;
+      top: 80px;
+      width: 262px;
+
+
+    }
+
+    .right {
+      position: absolute;
+      display: inline-block;
+      top: 20px;
+      right: 34px;
+      left: 300px;
+
+
+    }
+
+    .maindev {
+      width: 70%;
+      height: 400px;
+      position: absolute;
+      left: 50%;
+      margin-top: 182px;
+      transform: translate(-50%, -50%);
+      background-image: url(https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201102192324/Top-Applications-of-Robotics-in-2020.png);
+      background-size: 100% 100%;
+      box-shadow: 1px 2px 10px 5px white;
+      animation: slider 15s infinite linear;
+    }
+
+    @keyframes slider {
+      0% {
+        background-image: url(https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201102192324/Top-Applications-of-Robotics-in-2020.png);
+      }
+
+      35% {
+        background-image: url(http://www.multisoftsystems.com/blog/wp-content/uploads/robotics-training-in-Noida.png);
+      }
+
+      75% {
+        background-image: url(https://www.roboticprocessautomation.co.in/wp-content/uploads/2019/01/robotic-process-automation-training-1140x628.png);
+      }
+    }
+
+    .footer {
+      background-color: black;
+      color: rgb(210, 180, 238);
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div id="logo">
+        <h2>Robotics</h2>
+      </div>
+      <nav>
+        <ul>
+          <li class="home"><a href="../index.html">Home</a></li>
+          <li><a href="../humanoid/humanoid_robot.html">Humanoid</a></li>
+          <li><a href="../index.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="left header">
+    <table style="width:100%" background="3.gif" width="100%" height="100%">
+      <tr>
+        <th>ROBOTICS APPLICATION</th>
+      </tr>
+      <tr>
+        <td>Security</td>
+      </tr>
+      <tr>
+        <td>Space Exploration</td>
+      </tr>
+      <tr>
+        <td>Entertainment</td>
+      </tr>
+      <tr>
+        <td>Agriculture</td>
+      </tr>
+      <tr>
+        <td>Health Care</td>
+      </tr>
+      <tr>
+        <td>Underwater Exploration</td>
+      </tr>
+      <tr>
+        <td>Food Preparation</td>
+      </tr>
+      <tr>
+        <td>Manufacturing</td>
+      </tr>
+      <tr>
+        <td> Military</td>
+      </tr>
+      <tr>
+        <td>Customer Service</td>
+      </tr>
+      <tr>
+        <td>Conclusion</td>
+      </tr>
+
+      <tr>
+        <td class="den"></td>
+      </tr>
+      <tr>
+        <td class="den"></td>
+      </tr>
+      <tr>
+        <td class="den"></td>
+      </tr>
+
+    </table>
+  </div>
+
+  <div class="right">
+    <h2
+      style="margin-left:7px;color: red; font-size: 80px; background-color: black; font-weight: bolder; text-align: center;">
+      Applications of Robotics</h2>
+
+    <p style="margin-left:7px; font-size: 30px; font-weight: bolder;">Imagine the next time you go to a restaurant,
+      your chef is a robot! Or maybe your doctor is a robot when you have an operation! It’s even possible that the
+      next time you go to Japan, your customer service agent is also a robot! While this is an exaggeration and robots
+      are not becoming chefs and doctors, they are becoming widely used in these industries for food preparation,
+      healthcare, etc. In fact, robots have a wide range of applications in almost all industries these days because
+      of their precision and convenience.</p>
+
+    <p align="center" class="maindev"></p>
+    <p style="font-size: 30px; font-weight: bolder; margin-top: 431px;">There are many jobs in industries like
+      manufacturing, agriculture, entertainment, etc. which require boring monotonous work that also requires a lot of
+      precision. In such situations, robots are better suited than humans because they are precise, intelligent, and
+      don’t get bored like humans! There are also tasks like space and underwater exploration that are very dangerous
+      and unsafe for humans. Here also, robots are the best fit because they never get tired and there is no chance of
+      a robot getting killed! Because of these advantages, there are many applications of robots in almost all the
+      industries you can imagine. But let’s see the top applications in these 10 industries now.</p>
+
+    <h2 style="margin-left:7px;font-size: 50px;color: red;background: black;">Security</h2>
+    <i>
+      <div style="font-size: 30px;font-weight: bolder;">Imagine if all the security guards are robots? Even thieves
+        would be scared! That’s why robots are being proposed as security agents as they can protect humans, and they
+        wouldn’t be in danger like human security guards would be. Currently, robotics companies are working on
+        pairing robot guards with human security consultants. A very famous company in this field is Knightscope in
+        the United States that has autonomous security robots capable of assisting human security guards with
+        real-time, actionable intelligence. These robots can help with crimes such as armed robberies, burglaries,
+        domestic violence, fraud, hit, and runs, etc.</div>
+    </i>
+    <p align="center"><img
+        src="https://www.researchgate.net/profile/Golap-Kanti-Dey-2/publication/265161343/figure/fig3/AS:667664808701965@1536195103826/Block-diagram-of-the-rescue-and-security-mobile-Robot.png"
+        width="857" height="350" style=" border-color: black;background: black;"></p>
+
+
+    <h2 style="font-size:50px;color: red;background: black;">Space Exploration</h2>
+    <i>
+      <div style="font-size: 30px;font-weight: bolder;">There are many things in space that are very dangerous for
+        astronauts to do. Humans can’t roam on Mars all day to collect soil samples or work on repairing a spaceship
+        from the outside while it’s in deep space! In these situations, robots are a great choice because there are no
+        chances for the loss of human life then. So space institutions like NASA frequently use robots and autonomous
+        vehicles to do things that humans can’t. For example, Mars Rover is an autonomous robot that travels on Mars
+        and takes pictures of Martian rock formations that are interesting or important and then sends them back on
+        Earth for the NASA scientists to study.
+      </div>
+    </i>
+    <p align="center"><img
+        src="https://thumbs-prod.si-cdn.com/DqXBzCH784Ed4QulK3cqpAlyRtw=/fit-in/1600x0/https://public-media.si-cdn.com/filer/59/94/599497ae-18c8-4aee-a703-a921f73d8457/singularity.jpg"
+        width="857" height="350"></p>
+
+
+    <h2 style="margin-left:7px;font-size: 50px;color: red;background: black;">Entertainment</h2>
+    <i>
+      <div style="font-size: 30px;font-weight: bolder;">Robots are also a big draw in the entertainment industry.
+        While they cannot exactly become actors and actresses, they can be used behind the sets in movies and serials
+        to manage the camera, provide special effects, etc. They can be used for boring repetitive tasks that are not
+        suitable for a human as cinema is, after all, a creative industry. Robots can also be used to do stunt work
+        that is very dangerous for humans but looks pretty cool in an action movie. Theme parks like Disney World are
+        also using autonomous robots to enhance the magical experience of their customers
+      </div>
+    </i>
+    <p align="center"><img
+        src="https://cdn.theatlantic.com/thumbor/PqEph0m0F-cm8zZfi8jeElaQ1QM=/900x602/media/img/photo/2020/02/photos-robots-work-and-play/r01_RTS30W5X/original.jpg"
+        width="857" height="350"></p>
+
+    <h2 style="margin-left:7px;font-size: 50px;color: red;background: black;">Agriculture</h2>
+    <i>
+      <div style="font-size: 30px;font-weight: bold;">Agriculture is the sector that is the basis of human
+        civilization. However, agriculture is also a seasonal sector that is dependent on ideal weather conditions
+        optimal soil, etc. Moreover, there are many repetitive tasks in agriculture that are just a waste of farmer’s
+        time and can be performed more suitable by robots. These include seeding, weed control, harvesting, etc.
+        Robots are usually used for harvesting the crops which allow farmers to be more efficient. An example of a
+        robot that is used to remove weeds in farms is the Ecorobotix. It is powered by solar energy and can be used
+        to target and spray weeds using a complex camera system.
+      </div>
+    </i>
+    <p align="center"><img src="https://cdn.openpr.com/T/4/T422598908_g.jpg" width="857" height="350"></p>
+
+
+    <h2 style="margin-left:7px;font-size: 50px;color: red;background: black;">Health Care</h2>
+    <i>
+      <div style="font-size: 30px;font-weight: bold;">Robots have changed healthcare a lot. And all for the better!
+        They can help doctors in performing operations more precisely, be used as prosthetic limbs, provide therapy to
+        patients, etc. The possibilities are limitless. One example of this is the da Vinci robot that can help
+        surgeons in performing complex surgeries relating to the heart, head, neck, and other sensitive areas. There
+        are other robotic devices that are created like exoskeletons that can be used to provide additional support
+        for people undergoing rehabilitation after spinal injures, strokes, etc.
+      </div>
+    </i>
+    <p align="center"><img src="https://tech2bite.com/wp-content/uploads/2019/03/Robotics-in-Healthcare-Image2.jpg"
+        width="857" height="350"></p>
+
+
+
+    <h2 style="margin-left:7px;font-size: 50px;color: red;background: black;">Underwater Exploration</h2>
+    <i>
+      <div style="font-size: 30px;font-weight: bold;">Robots are a great option for exploring places that humans
+        cannot reach easily, like the depths of the ocean! There is a lot of water pressure deep in the ocean which
+        means humans cannot go that down and machines such as submarines can only go to a certain depth as well. A
+        deep underwater is a mysterious place that can finally be explored using specially designed robots. These
+        robots are remote-controlled, and they can go into depths of the ocean to collect data and images about the
+        aquatic plant and animal life.
+      </div>
+    </i>
+    <p align="center"><img src="https://cdn4.dogonews.com/images/15d1ad47-00bc-4e34-9588-274b9bcf0b2e/mjc0nzc0na-1.jpg"
+        width="857" height="350"></p>
+
+
+    <h2 style="margin-left:7px;font-size: 50px;color: red;background: black;">Food Preparation</h2>
+    <i>
+      <div style="font-size: 30px;font-weight: bold;">Don’t want to cook? Don’t worry, there are robots that even can
+        cook and create complete meals for you! These robot chefs can create food using hundreds of different recipes.
+        All humans need to do is choose the recipe they want and provide the robot with pre-packaged containers of all
+        the ingredients that are needed for that recipe. The robot can then cook the food on its own. Moley Robotics
+        is one such robotics company that has created a robotic kitchen with a robot that can cook like a master chef!
+        So no worries if you can’t cook food. Because now a robot can!
+      </div>
+    </i>
+    <p align="center"><img src="http://prod-upp-image-read.ft.com/e4bf1c00-e512-11e6-9645-c9357a75844a" width="857"
+        height="350"></p>
+
+
+    <h2 style="margin-left:7px;font-size: 50px;color: red;background: black;"> Manufacturing</h2>
+    <i>
+      <div style="font-size: 30px;font-weight: bold;">There are many repetitive and common tasks in the manufacturing
+        industry that don’t require any usage of the mind like welding, assembly, packing, etc. These tasks can be
+        easily done by robots while leaving the mentally challenging and creative tasks to humans. These robots can be
+        trained to perform these repetitive and monotonous tasks with precision under the guidance and supervision of
+        a human. This option is also best for the manufacturing processes that are dangerous and may be harmful to
+        humans.
+      </div>
+    </i>
+    <p align="center"><img src="http://wespec.net/wp-content/uploads/2019/12/377560_robotics-wallpaper.jpg" width="857"
+        height="350"></p>
+
+
+    <h2 style="margin-left:7px;font-size: 50px;color: red;background: black;"> Military</h2>
+    <i>
+      <div style="font-size: 30px;font-weight: bold;">Robots also have many applications in the military. They can be
+        used as drones to keep surveillance on the enemy, they can also be used as armed systems to attack the
+        opposing forces or as Medicare agents to help friendly forces. Some of the popular robots used in the Military
+        sector include MAARS (Modular Advanced Armed Robotic System) which looks like a tank and contains tear gas and
+        lasers to confuse enemies and even grenade launcher for desperate situations. DOGO is also a tactical combat
+        robot that has a camera for spying on the activities of the enemy and a 9-millimeter pistol for emergency
+        situations!
+      </div>
+    </i>
+    <p align="center"><img src="https://img.dtcn.com/image/digitaltrends/ghostrobotics2.jpg" width="857" height="350">
+    </p>
+
+
+
+    <h2 style="margin-left:7px;font-size: 50px;color: red;background: black;">Customer Service</h2>
+    <i>
+      <div style="font-size: 30px;font-weight: bold;">There are robots that are developed to look exactly like humans
+        for cosmetic purposes. These robots are primarily used in the field of customer service in high visibility
+        areas to promote robotics. One such example is Nadine, a humanoid robot in Singapore that can recognize people
+        from previous visits, make eye contact, shake hands, continue chatting based on previous meetings, etc.
+        Another such customer service robot is Junko Chihira in Japan, a humanoid robot working at the tourist
+        information center in Aqua City Odaiba, a shopping center on Tokyo’s waterfront.
+      </div>
+    </i>
+    <p align="center"><img src="https://supplychainasia.org/wp-content/uploads/2019/03/robotcustomerservice.png"
+        width="857" height="350"></p>
+
+
+    <h2 style="margin-left:7px;font-size: 50px;color: red;background: black;">Conclusion</h2>
+    <i>
+      <div style="font-size: 30px;font-weight: bold;">Now you have seen the various applications of robots in
+        different industries. Robots are used these days for everything ranging from security guards, chefs, doctor’s
+        assistants, customer service agents, and even a one-man army in war! There are many other applications of
+        robots as well because of their precision and programming to perform various tasks that are dangerous, boring,
+        or repetitive to humans. Robots can do all the physically demanding tasks that are difficult or impossible for
+        humans, and they are even becoming smarter and smarter with the advances in artificial intelligence. All in
+        all, robots can be the perfect helper for humans and solve many problems in different industries.
+      </div>
+    </i>
+
+
+    <footer class="footer">
+      Copyright &copy; 2021 All rights reserved
+    </footer>
+  </div>
+
+</body>
+
+</html>
